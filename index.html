@@ -3,302 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio | xdubnickas</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #fff;
-            margin-bottom: 1rem;
-        }
-        
-        .name {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #ecf0f1;
-        }
-        
-        nav {
-            background-color: #34495e;
-            padding: 1rem 0;
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin: 0 15px;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: #3498db;
-        }
-        
-        section {
-            padding: 3rem 0;
-        }
-        
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-            position: relative;
-        }
-        
-        h2::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 3px;
-            background-color: #3498db;
-        }
-        
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .project {
-            background-color: #fff;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .project:hover {
-            transform: translateY(-5px);
-        }
-        
-        .project img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .project-info {
-            padding: 20px;
-        }
-        
-        .project h3 {
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .skill {
-            background-color: #ecf0f1;
-            padding: 10px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-        
-        button {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: #2980b9;
-        }
-        
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        
-        .social-links {
-            margin-top: 15px;
-        }
-        
-        .social-links a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: #3498db;
-        }
-        
-        @media (max-width: 768px) {
-            .projects {
-                grid-template-columns: 1fr;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            nav ul li {
-                margin: 5px 0;
-            }
-        }
-    </style>
+    <title>Štefan Dubnička | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <!-- Replace with your own image URL -->
-            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-image">
-            <h1 class="name">Your Name</h1>
-            <p class="title">Web Developer | Designer | Creator</p>
+            <img src="https://via.placeholder.com/150" alt="Štefan Dubnička" class="profile-image">
+            <h1 class="name">Štefan Dubnička</h1>
+            <p class="title">Web Developer | Java Developer | Student</p>
+            <a href="CV (1).pdf" class="cv-button" target="_blank"><i class="fas fa-file-pdf"></i> Pozrieť CV</a>
         </div>
     </header>
     
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">O mne</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#skills">Znalosti</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
     
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm a passionate developer with expertise in web technologies. I enjoy creating responsive 
-                and user-friendly websites and applications. My goal is to build solutions that not only look 
-                great but also provide excellent user experience.
-            </p>
-            <p>
-                I'm currently studying/working at [Your School/Company]. When I'm not coding, you can find me 
-                [Your Hobbies/Interests].
-            </p>
+            <h2>O mne</h2>
+            <div class="about-content">
+                <p>
+                    Aktuálne študujem aplikovanú informatiku na STU FEI so zameraním na webové technológie. 
+                    Bol by som v 4. ročníku, ale keďže opakujem 2 predmety, som oficiálne v treťom. Z tohto 
+                    dôvodu by som mal ale viac času venovať sa nielen štúdiu na škole, ale aj práci.
+                </p>
+                <p>
+                    Mám skúsenosti s vývojom webových aplikácií, napríklad z bakalárskej práce, kde som navrhol 
+                    a implementoval rezervačný systém. Pracoval som s technológiami ako React, Java / Spring Boot, 
+                    MySQL, používal som aj draw.io na kreslenie UML diagramov, Postman na testovanie backendu 
+                    a GIT na verziovanie kódu.
+                </p>
+                <p>
+                    Hľadám príležitosť, kde môžem uplatniť svoje doterajšie znalosti a zároveň sa učiť nové veci 
+                    v praxi. Odborný rast a možnosť kariérneho postupu sú pre mňa dôležité. Zároveň ma láka dlhodobá 
+                    spolupráca, a preto by som rád našiel miesto, kde by som mohol pokračovať aj po ukončení štúdia.
+                </p>
+            </div>
         </div>
     </section>
     
     <section id="projects" style="background-color: #ecf0f1;">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2>Moje projekty</h2>
             <div class="projects">
-                <!-- Project 1 -->
+                <!-- Projekt 1 -->
                 <div class="project">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <img src="https://via.placeholder.com/300x200" alt="Rezervačný systém">
                     <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p>Description of your project. What technologies you used and what you learned.</p>
-                        <a href="#" target="_blank">View Project</a>
+                        <h3>Rezervačný systém</h3>
+                        <p>Bakalárska práca - webová aplikácia pre rezerváciu priestorov a služieb s využitím React, Spring Boot a MySQL.</p>
+                        <a href="#" target="_blank">Zobraziť projekt</a>
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
+                <!-- Projekt 2 -->
                 <div class="project">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <img src="https://via.placeholder.com/300x200" alt="Webová stránka">
                     <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p>Description of your project. What technologies you used and what you learned.</p>
-                        <a href="#" target="_blank">View Project</a>
+                        <h3>Osobná webová stránka</h3>
+                        <p>Táto webová stránka vytvorená pomocou HTML, CSS a hostovaná na GitHub Pages.</p>
+                        <a href="https://github.com/xdubnickas/xdubnickas.github.io" target="_blank">Zdrojový kód</a>
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
+                <!-- Projekt 3 -->
                 <div class="project">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <img src="https://via.placeholder.com/300x200" alt="Študentský projekt">
                     <div class="project-info">
-                        <h3>Project Title 3</h3>
-                        <p>Description of your project. What technologies you used and what you learned.</p>
-                        <a href="#" target="_blank">View Project</a>
+                        <h3>Iné školské projekty</h3>
+                        <p>Rôzne menšie projekty vytvorené počas štúdia, zahŕňajúce programovanie v C, Python a Java.</p>
+                        <a href="https://github.com/xdubnickas" target="_blank">GitHub profil</a>
                     </div>
                 </div>
             </div>
@@ -307,27 +92,30 @@
     
     <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Technické znalosti</h2>
             <div class="skills">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
+                <div class="skill">Java (Spring Boot)</div>
+                <div class="skill">Python</div>
+                <div class="skill">C/C++</div>
+                <div class="skill">PHP</div>
+                <div class="skill">HTML/CSS</div>
                 <div class="skill">JavaScript</div>
                 <div class="skill">React</div>
-                <div class="skill">Node.js</div>
+                <div class="skill">SQL</div>
                 <div class="skill">Git</div>
-                <div class="skill">Responsive Design</div>
-                <!-- Add or remove skills as needed -->
+                <div class="skill">UML diagramy</div>
+                <div class="skill">Microsoft Office</div>
             </div>
         </div>
     </section>
     
     <section id="contact" style="background-color: #ecf0f1;">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2>Kontaktujte ma</h2>
             <div class="contact-form">
                 <form>
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Meno</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
@@ -335,10 +123,10 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">Správa</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit">Odoslať správu</button>
                 </form>
             </div>
         </div>
@@ -346,13 +134,26 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2025 Štefan Dubnička. Všetky práva vyhradené.</p>
             <div class="social-links">
-                <a href="https://github.com/xdubnickas" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+                <a href="https://github.com/xdubnickas" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:s.dubnicka2@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+421950731620"><i class="fas fa-phone"></i></a>
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Jednoduché skrolovanie po kliknutí na odkazy v navigácii
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
