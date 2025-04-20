@@ -113,7 +113,7 @@
         <div class="container">
             <h2>Kontaktujte ma</h2>
             <div class="contact-form">
-                <form>
+                <form id="contactForm" action="https://formsubmit.co/s.dubnicka2@gmail.com" method="POST">
                     <div class="form-group">
                         <label for="name">Meno</label>
                         <input type="text" id="name" name="name" required>
@@ -126,7 +126,12 @@
                         <label for="message">Správa</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">Odoslať správu</button>
+                    <input type="hidden" name="_subject" value="Nová správa z portfolia!">
+                    <input type="hidden" name="_next" value="https://xdubnickas.github.io/thank-you.html">
+                    <input type="text" name="_honey" style="display:none"> <!-- Anti-spam honeypot -->
+                    <input type="hidden" name="_template" value="box">
+                    <button type="submit" id="submitButton">Odoslať správu</button>
+                    <div id="formStatus"></div>
                 </form>
             </div>
         </div>
@@ -154,6 +159,57 @@
                 });
             });
         });
+
+        // Základná validácia formulára
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            const formStatus = document.getElementById('formStatus');
+            
+            let isValid = true;
+            formStatus.textContent = '';
+            formStatus.className = '';
+            
+            if (name.value.trim() === '') {
+                isValid = false;
+                name.classList.add('error');
+            } else {
+                name.classList.remove('error');
+            }
+            
+            if (email.value.trim() === '' || !isValidEmail(email.value)) {
+                isValid = false;
+                email.classList.add('error');
+            } else {
+                email.classList.remove('error');
+            }
+            
+            if (message.value.trim() === '') {
+                isValid = false;
+                message.classList.add('error');
+            } else {
+                message.classList.remove('error');
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+                formStatus.textContent = 'Prosím, vyplňte všetky polia správne.';
+                formStatus.className = 'error-message';
+            } else {
+                // Pri úspešnej validácii zobraziť správu
+                const submitButton = document.getElementById('submitButton');
+                submitButton.disabled = true;
+                submitButton.textContent = 'Odosielam...';
+                
+                // FormSubmit sa postará o odoslanie
+            }
+        });
+        
+        function isValidEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
     </script>
 </body>
 </html>

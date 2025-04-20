@@ -6,6 +6,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Make sure the root div takes full width */
+#root {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #f5f5f5;
     color: #333;
@@ -19,12 +34,14 @@ header {
     text-align: center;
     padding: 2rem 0;
     position: relative;
+    width: 100%;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 .profile-image {
@@ -56,6 +73,7 @@ nav {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 nav ul {
@@ -99,6 +117,7 @@ nav ul li a:hover::after {
 /* Section Styles */
 section {
     padding: 4rem 0;
+    width: 100%;
 }
 
 h2 {
@@ -246,11 +265,44 @@ h2::after {
 .form-group textarea:focus {
     border-color: #3498db;
     outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.05);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: rgba(231, 76, 60, 0.1);
+    border-radius: 4px;
+    border-left: 3px solid #e74c3c;
+}
+
+.success-message {
+    color: #27ae60;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: rgba(39, 174, 96, 0.1);
+    border-radius: 4px;
+    border-left: 3px solid #27ae60;
+}
+
+#formStatus {
+    margin-top: 15px;
+    font-weight: 500;
+    min-height: 22px;
 }
 
 button {
@@ -261,11 +313,19 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 150px;
 }
 
 button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
 }
 
 /* CV Button */
@@ -292,28 +352,64 @@ button:hover {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #2c3e50;
     color: #fff;
-    text-align: center;
     padding: 2rem 0;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
 }
 
 .social-links {
-    margin-top: 20px;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-.social-links a {
-    display: inline-block;
+.social-icon {
     color: #fff;
-    margin: 0 15px;
     font-size: 1.5rem;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links a:hover {
+.social-icon:hover {
     color: #3498db;
     transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-info {
+        margin-bottom: 1.5rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
 }
 
 /* Alternating Sections */
