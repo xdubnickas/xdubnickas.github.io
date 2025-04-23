@@ -1,19 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Navigation({ onNavigate }) {
-  const handleClick = (e, id) => {
-    e.preventDefault();
-    onNavigate(id);
-  };
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav>
+    <nav className={scrolled ? 'scrolled' : ''}>
       <div className="container">
-        <ul>
-          <li><a href="#about" onClick={(e) => handleClick(e, 'about')}>O mne</a></li>
-          <li><a href="#projects" onClick={(e) => handleClick(e, 'projects')}>Projekty</a></li>
-          <li><a href="#skills" onClick={(e) => handleClick(e, 'skills')}>Znalosti</a></li>
-          <li><a href="#contact" onClick={(e) => handleClick(e, 'contact')}>Kontakt</a></li>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a href="#about" onClick={(e) => {
+              e.preventDefault();
+              onNavigate('about');
+            }}>O mne</a>
+          </li>
+          <li className="nav-item">
+            <a href="#projects" onClick={(e) => {
+              e.preventDefault();
+              onNavigate('projects');
+            }}>Projekty</a>
+          </li>
+          <li className="nav-item">
+            <a href="#skills" onClick={(e) => {
+              e.preventDefault();
+              onNavigate('skills');
+            }}>Zručnosti</a>
+          </li>
+          <li className="nav-item">
+            <a href="#contact" onClick={(e) => {
+              e.preventDefault();
+              onNavigate('contact');
+            }}>Kontakt</a>
+          </li>
         </ul>
       </div>
     </nav>

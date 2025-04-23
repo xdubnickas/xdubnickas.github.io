@@ -1,15 +1,45 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-function ProjectCard({ title, description, imageUrl, imageAlt, link, linkText }) {
+function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, demoUrl, technologies }) {
   return (
-    <div className="project">
-      <img src={imageUrl} alt={imageAlt} />
-      <div className="project-info">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <a href={link} target="_blank" rel="noopener noreferrer">{linkText}</a>
+    <motion.div 
+      className="project-card"
+      whileHover={{ y: -10 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="project-header">
+        <div className="project-image-container">
+          <img src={imageUrl} alt={imageAlt} />
+          <div className="project-links">
+            {githubUrl && (
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon">
+                <i className="fab fa-github"></i>
+              </a>
+            )}
+            {demoUrl && (
+              <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
+      
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
+        <p className="project-description">{description}</p>
+        
+        <div className="project-tech">
+          {technologies.map((tech, index) => (
+            <span key={index} className="tech-tag">{tech}</span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
