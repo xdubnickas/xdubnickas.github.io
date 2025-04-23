@@ -11,18 +11,28 @@ This repository contains the source code for my personal portfolio website, host
 
 ## Technologies Used
 
-- HTML5
+- React.js
 - CSS3 (with Flexbox and CSS Grid)
-- Vanilla JavaScript
+- Component-based architecture
 - GitHub Pages for hosting
 
 ## How to Use
 
 1. Fork this repository
-2. Customize the content in `index.html` to reflect your information
-3. Replace placeholder images with your own images
-4. Update links to your social media profiles
-5. Push changes to GitHub to automatically deploy
+2. Run `npm install` to install dependencies
+3. Customize the components in the `react-app/src/components` directory
+4. Replace placeholder data with your own information
+5. Update links to your social media profiles
+6. Run `npm run build` to create a production build
+7. Push changes to GitHub to automatically deploy
+
+## Development
+
+To start the development server:
+```
+cd react-app
+npm start
+```
 
 ## Future Improvements
 
@@ -30,6 +40,7 @@ This repository contains the source code for my personal portfolio website, host
 - Implement dark mode
 - Add more interactive elements
 - Integrate a backend for the contact form
+- Add state management for larger application growth
 
 ## License
 
