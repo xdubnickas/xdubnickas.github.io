@@ -102,20 +102,7 @@ function Header() {
     <header className="animated-header">
       <div className="gradient-background"></div>
       <canvas ref={canvasRef} className="particle-canvas"></canvas>
-      <div className="container" data-aos="fade-down">
-        <motion.div 
-          className="profile-image-container"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <img 
-            src="/img/profile-photo.jpg" 
-            alt="Štefan Dubnička" 
-            className="profile-image"
-          />
-        </motion.div>
-        
+      <div className="container" data-aos="fade-down">        
         <motion.h1 
           className="name"
           initial={{ opacity: 0, y: 20 }}

@@ -153,14 +153,14 @@ header .container {
   z-index: 1;
 }
 
-/* Updated Header Styles with Profile Image */
+/* Updated Profile Image Container */
 .profile-image-container {
   position: relative;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 2rem;
+  width: 160px;  /* Increased from 120px */
+  height: 160px; /* Increased from 120px */
+  margin: 0 auto 2.5rem;
   border-radius: 50%;
-  padding: 3px;
+  padding: 4px;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), var(--primary-color));
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   z-index: 5;
@@ -200,6 +200,7 @@ header .container {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .cv-button, .github-button {
@@ -373,7 +374,7 @@ nav .container {
 
 /* Section Styles */
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
@@ -477,10 +478,47 @@ section:not(:last-of-type)::after {
   box-shadow: var(--shadow-hover);
 }
 
-/* About Styles */
+/* Updated About Styles with Profile Image */
 .about-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), var(--primary-color));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
 .about-content p {
@@ -490,20 +528,21 @@ section:not(:last-of-type)::after {
   color: #444;
 }
 
-.about-list {
-  list-style: none;
-}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.about-list li {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-}
-
-.about-list li i {
-  color: var(--primary-color);
-  margin-right: 1rem;
+  .about-profile-container {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image-container {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 /* Projects Styles */
@@ -619,11 +658,13 @@ section:not(:last-of-type)::after {
   box-shadow: var(--shadow-hover);
 }
 
-/* Updated Project Styles */
+/* Updated Project Styles with larger images - 2 per row */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);  /* Changed to exactly 2 columns */
+  gap: 3rem;  /* Increased gap between projects */
+  margin-top: 3rem;
+  max-width: 100%;
 }
 
 .project-card {
@@ -635,6 +676,7 @@ section:not(:last-of-type)::after {
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-width: 0;  /* Prevent overflow in flex items */
 }
 
 .project-header {
@@ -643,18 +685,19 @@ section:not(:last-of-type)::after {
 
 .project-image-container {
   position: relative;
-  height: 180px;
+  height: 280px;  /* Further increased height for better visibility */
   overflow: hidden;
 }
 
-.project-image-container img {
+.project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform 0.5s ease;
 }
 
-.project-card:hover .project-image-container img {
+.project-card:hover .project-img {
   transform: scale(1.05);
 }
 
@@ -671,12 +714,12 @@ section:not(:last-of-type)::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;  /* Increased from 40px */
+  height: 45px;  /* Increased from 40px */
   background-color: rgba(255, 255, 255, 0.9);
   color: var(--primary-color);
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;  /* Increased from 1.2rem */
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -689,7 +732,7 @@ section:not(:last-of-type)::after {
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 2rem;  /* Increased from 1.5rem */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -697,16 +740,16 @@ section:not(:last-of-type)::after {
 }
 
 .project-title {
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.5rem;  /* Increased from 1.3rem */
+  margin-bottom: 1rem;  /* Increased from 0.8rem */
   color: var(--dark-color);
   font-weight: 600;
 }
 
 .project-description {
-  font-size: 0.95rem;
+  font-size: 1.05rem;  /* Increased from 0.95rem */
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;  /* Increased from 1.5rem */
   line-height: 1.6;
   flex-grow: 1;
 }
@@ -714,16 +757,16 @@ section:not(:last-of-type)::after {
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.7rem;  /* Increased from 0.5rem */
   margin-top: auto;
 }
 
 .tech-tag {
   display: inline-block;
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 1rem;  /* Increased from 0.3rem 0.8rem */
   background-color: rgba(58, 134, 255, 0.1);
   color: var(--primary-color);
-  font-size: 0.8rem;
+  font-size: 0.9rem;  /* Increased from 0.8rem */
   font-weight: 500;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -731,6 +774,34 @@ section:not(:last-of-type)::after {
 
 .tech-tag:hover {
   background-color: rgba(58, 134, 255, 0.2);
+}
+
+/* Responsive styles for projects */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: 1fr;  /* Single column on medium screens */
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    gap: 2rem;
+  }
+  
+  .project-image-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-image-container {
+    height: 220px;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
 }
 
 /* Skills Component Styling */
@@ -1088,11 +1159,6 @@ section:not(:last-of-type)::after {
   
   .skills-tabs {
     flex-direction: column;
-  }
-  
-  .header-buttons {
-    flex-direction: column;
-    gap: 1rem;
   }
   
   .skill-tab-button {

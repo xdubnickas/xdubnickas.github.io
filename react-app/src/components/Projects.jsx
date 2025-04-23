@@ -5,16 +5,26 @@ function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: "Rezervačný systém",
-      description: "Online rezervačný systém pre firmy a organizácie, ktorý umožňuje jednoduchú správu priestorov a služieb.",
-      imageUrl: "https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      title: "Reservation System",
+      description: "Komplexný rezervačný systém s Docker podporou, rôznymi používateľskými rolami a viacvrstvovou architektúrou. Implementuje overovanie miest cez GeoDB API.",
+      imageUrl: "/img/event-organizer-dashboard.png",
       imageAlt: "Rezervačný systém",
       githubUrl: "https://github.com/xdubnickas/reservation-system",
-      demoUrl: "https://reservation-demo.netlify.app",
-      technologies: ["React", "Spring Boot", "MySQL", "Bootstrap", "REST API"]
+      demoUrl: null,
+      technologies: ["Spring Boot", "React", "MySQL", "Docker", "Bootstrap", "REST API", "JWT Authentication"]
     },
     {
       id: 2,
+      title: "Schedule Share",
+      description: "Moderná webová aplikácia na vytváranie a zdieľanie rozvrhov. Vhodná pre študentov, tímové plánovanie alebo osobné použitie.",
+      imageUrl: "/img/schedule-share2.png",
+      imageAlt: "Schedule Share App",
+      githubUrl: "https://github.com/xdubnickas/schedule-share",
+      demoUrl: "https://reservation-demo.netlify.app",
+      technologies: ["React", "Vite", "Tailwind CSS", "DaisyUI", "Supabase", "PostgreSQL"]
+    },
+    {
+      id: 3,
       title: "Brightness Control",
       description: "Moderná, odľahčená aplikácia v systémovej lište pre ovládanie jasu obrazovky s elegantnými animáciami a vizuálnou spätnou väzbou.",
       imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
@@ -24,17 +34,17 @@ function Projects() {
       technologies: ["Python", "Tkinter", "PyWin32", "WMI", "Screen Brightness Control"]
     },
     {
-      id: 3,
+      id: 4,
       title: "Hlasovací systém",
       description: "Online hlasovací systém pre prednášky s rôznymi typmi otázok, QR kódmi a komplexným administrátorským rozhraním. Tímový projekt.",
-      imageUrl: "/img/voting-system.png",
+      imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "Hlasovací systém",
       githubUrl: "https://github.com/xsipkam1/voting-system",
       demoUrl: null,
-      technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript", "REST API"]
+      technologies: ["PHP", "MySQL", "Bootstrap", "JavaScript", "REST API", "CSS3"]
     },
     {
-      id: 4,
+      id: 5,
       title: "Racing Game",
       description: "Multiplatformová PWA hra s gyro ovládaním pre mobily a klávesnicou/myšou pre desktop.",
       imageUrl: "/img/rapidracergame.png",
@@ -44,7 +54,7 @@ function Projects() {
       technologies: ["HTML5", "CSS3", "JavaScript", "PWA", "Device Sensors API"]
     },
     {
-      id: 5,
+      id: 6,
       title: "Portfolio stránka",
       description: "Moje osobné portfólio vytvorené pomocou React.js s moderným dizajnom a animáciami.",
       imageUrl: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",

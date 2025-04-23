@@ -13,7 +13,11 @@ function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, demoUr
     >
       <div className="project-header">
         <div className="project-image-container">
-          <img src={imageUrl} alt={imageAlt} />
+          <img 
+            src={imageUrl} 
+            alt={imageAlt} 
+            className="project-img"
+          />
           <div className="project-links">
             {githubUrl && (
               <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon">
