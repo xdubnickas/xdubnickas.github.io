@@ -1,14 +1,13 @@
 import React from 'react';
+import '../style/Footer.css';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="modern-footer">
-      <div className="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#023e7d" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,149.3C672,149,768,171,864,176C960,181,1056,171,1152,144C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+    <footer className="modern-footer2">
+      <div className="footer-transition">
+        <div className="footer-transition-shape"></div>
       </div>
       
       <div className="container footer-content">

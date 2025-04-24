@@ -6,7 +6,7 @@ function Projects() {
     {
       id: 1,
       title: "Reservation System",
-      description: "Komplexný rezervačný systém s Docker podporou, rôznymi používateľskými rolami a viacvrstvovou architektúrou. Implementuje overovanie miest cez GeoDB API.",
+      description: "Komplexný rezervačný systém s Docker podporou, rôznymi používateľskými rolami a viacvrstvovou architektúrou. Súčasť mojej bakalárskej práce.",
       imageUrl: "/img/event-organizer-dashboard.png",
       imageAlt: "Rezervačný systém",
       githubUrl: "https://github.com/xdubnickas/reservation-system",
@@ -26,8 +26,8 @@ function Projects() {
     {
       id: 3,
       title: "Brightness Control",
-      description: "Moderná, odľahčená aplikácia v systémovej lište pre ovládanie jasu obrazovky s elegantnými animáciami a vizuálnou spätnou väzbou.",
-      imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      description: "Aplikácia v systémovej lište na ovládanie jasu, ktorá ponúka vizuálnu spätnú väzbu, inteligentnú správu okien a možnosť spustenia pri štarte systému, pričom zaručuje nízku spotrebu zdrojov.",
+      imageUrl: "/img/brightness.png",
       imageAlt: "Brightness Control",
       githubUrl: "https://github.com/xdubnickas/brightness-control",
       demoUrl: null,
@@ -63,14 +63,31 @@ function Projects() {
       demoUrl: null,
       technologies: ["React", "CSS3", "Framer Motion", "GitHub Pages"]
     },
+    {
+      id: 7,
+      title: "Školské zadania OOP",
+      description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite.",
+      imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageAlt: "Školské projekty OOP",
+      githubIcons: [
+        {url: "https://github.com/Interes-Group/zadanie-3-eshop-115056", tooltip: "E-shop"},
+        {url: "https://github.com/Interes-Group/zadanie-2-pipes-115056", tooltip: "WaterPipes"},
+        {url: "https://github.com/Interes-Group/zadanie-1-bang-lite-115056", tooltip: "BANG Lite"}
+      ],
+      demoUrl: null,
+      technologies: ["Java", "Spring Boot", "REST API", "AWT/Swing", "OOP"]
+    }
   ];
+
+  // Remove entries with IDs 8 and 9 from projectsData
+  const filteredProjectsData = projectsData.filter(project => project.id <= 7);
 
   return (
     <section id="projects">
       <div className="container">
         <h2 data-aos="fade-right">Moje projekty</h2>
         <div className="projects-grid">
-          {projectsData.map((project) => (
+          {filteredProjectsData.map((project) => (
             <ProjectCard 
               key={project.id}
               title={project.title}
@@ -78,6 +95,7 @@ function Projects() {
               imageUrl={project.imageUrl}
               imageAlt={project.imageAlt}
               githubUrl={project.githubUrl}
+              githubIcons={project.githubIcons}
               demoUrl={project.demoUrl}
               technologies={project.technologies}
             />

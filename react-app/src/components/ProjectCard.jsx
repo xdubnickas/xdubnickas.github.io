@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, demoUrl, technologies }) {
+function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, technologies }) {
   return (
     <motion.div 
       className="project-card"
@@ -24,6 +24,18 @@ function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, demoUr
                 <i className="fab fa-github"></i>
               </a>
             )}
+            {githubIcons && githubIcons.map((icon, index) => (
+              <a 
+                key={index} 
+                href={icon.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="project-link-icon"
+                title={icon.tooltip}
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            ))}
             {demoUrl && (
               <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon">
                 <i className="fas fa-external-link-alt"></i>
