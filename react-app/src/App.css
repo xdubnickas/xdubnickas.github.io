@@ -153,18 +153,6 @@ header .container {
   z-index: 1;
 }
 
-/* Updated Profile Image Container */
-.profile-image-container {
-  position: relative;
-  width: 160px;  /* Increased from 120px */
-  height: 160px; /* Increased from 120px */
-  margin: 0 auto 2.5rem;
-  border-radius: 50%;
-  padding: 4px;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), var(--primary-color));
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  z-index: 5;
-}
 
 .profile-image {
   width: 100%;
@@ -172,7 +160,7 @@ header .container {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, border 0.3s ease;
+  transition: transform 0.4s ease, border 1.3s ease;
 }
 
 .profile-image:hover {
@@ -480,7 +468,7 @@ section:not(:last-of-type)::after {
 
 /* Updated About Styles with Profile Image */
 .about-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -499,8 +487,8 @@ section:not(:last-of-type)::after {
 
 .profile-image-container {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   padding: 5px;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), var(--primary-color));
@@ -513,7 +501,7 @@ section:not(:last-of-type)::after {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, border 0.3s ease;
+  transition: transform 0.4s ease, border 1.3s ease;
 }
 
 .profile-image:hover {
@@ -1107,7 +1095,6 @@ section:not(:last-of-type)::after {
   height: 60px;
   border-radius: 50%;
   background: var(--gradient);
-  margin-right: 1.5rem;
   flex-shrink: 0;
 }
 

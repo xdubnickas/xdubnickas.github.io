@@ -6,50 +6,52 @@ function Skills() {
   
   const skillCategories = {
     programming: [
-      { name: 'Java (Spring Boot)', level: 85, experience: 'Pokročilý', years: 3 },
-      { name: 'Python', level: 70, experience: 'Stredne pokročilý', years: 2 },
-      { name: 'JavaScript', level: 90, experience: 'Expert', years: 4 },
-      { name: 'C/C++', level: 65, experience: 'Stredne pokročilý', years: 2 },
-      { name: 'PHP', level: 60, experience: 'Začiatočník', years: 1 }
+      { name: 'Java (Spring Boot)', level: 60 },
+      { name: 'JavaScript', level: 60 },
+      { name: 'Python', level: 59 },
+      { name: 'C/C++', level: 55 },
+      { name: 'PHP', level: 30 }
     ],
     frontend: [
-      { name: 'React.js', level: 85, experience: 'Pokročilý', years: 3 },
-      { name: 'HTML5/CSS3', level: 95, experience: 'Expert', years: 5 },
-      { name: 'SASS/SCSS', level: 75, experience: 'Pokročilý', years: 2 },
-      { name: 'Bootstrap', level: 80, experience: 'Pokročilý', years: 3 },
-      { name: 'Next.js', level: 60, experience: 'Začiatočník', years: 1 }
+      { name: 'HTML/CSS', level: 60 },
+      { name: 'React.js', level: 48 },
+      { name: 'Bootstrap', level: 45 },
+      { name: 'Tailwind CSS', level: 15 }
     ],
     database: [
-      { name: 'MySQL', level: 80, experience: 'Pokročilý', years: 3 },
-      { name: 'PostgreSQL', level: 70, experience: 'Stredne pokročilý', years: 2 },
-      { name: 'MongoDB', level: 65, experience: 'Stredne pokročilý', years: 1 },
-      { name: 'SQL', level: 85, experience: 'Pokročilý', years: 4 },
-      { name: 'Redis', level: 50, experience: 'Začiatočník', years: 1 }
+      { name: 'SQL', level: 48 },
+      { name: 'PostgreSQL', level: 23 }
     ],
     tools: [
-      { name: 'Git & GitHub', level: 90, experience: 'Expert', years: 4 },
-      { name: 'Docker', level: 60, experience: 'Začiatočník', years: 1 },
-      { name: 'UML diagramy', level: 75, experience: 'Pokročilý', years: 3 },
-      { name: 'VS Code', level: 95, experience: 'Expert', years: 5 },
-      { name: 'Microsoft Office', level: 80, experience: 'Pokročilý', years: 10 }
+      { name: 'Microsoft Office', level: 54 },
+      { name: 'Git & GitHub', level: 40 },
+      { name: 'UML diagramy', level: 40 },
+      { name: 'Docker', level: 27 }
     ]
   };
   
   const getLevelColor = (level) => {
-    if (level >= 90) return '#10b981'; // Expert - green
-    if (level >= 70) return '#3b82f6'; // Advanced - blue
-    if (level >= 50) return '#f59e0b'; // Intermediate - yellow/orange
-    return '#ef4444'; // Beginner - red
+    if (level >= 80) return '#10b981'; // Expert - green
+    if (level >= 60) return '#3b82f6'; // Pokročilý - blue
+    if (level >= 40) return '#f59e0b'; // Mierne pokročilý - yellow/orange
+    if (level >= 20) return '#f97316'; // Začiatočník - orange
+    return '#ef4444'; // Úplný začiatočník - red
   };
   
-  const getExperienceIcon = (experience) => {
-    switch(experience) {
-      case 'Expert': return 'fas fa-star';
-      case 'Pokročilý': return 'fas fa-medal';
-      case 'Stredne pokročilý': return 'fas fa-check-circle';
-      case 'Začiatočník': return 'fas fa-seedling';
-      default: return 'fas fa-code';
-    }
+  const getExperienceLevel = (level) => {
+    if (level >= 80) return 'Expert';
+    if (level >= 60) return 'Pokročilý';
+    if (level >= 40) return 'Mierne pokročilý';
+    if (level >= 20) return 'Začiatočník';
+    return 'Úplný začiatočník';
+  };
+  
+  const getExperienceIcon = (level) => {
+    if (level >= 80) return 'fas fa-star';
+    if (level >= 60) return 'fas fa-medal';
+    if (level >= 40) return 'fas fa-check-circle';
+    if (level >= 20) return 'fas fa-seedling';
+    return 'fas fa-baby';
   };
 
   return (
@@ -94,8 +96,7 @@ function Skills() {
                 <div className="skill-name-container">
                   <h3>{skill.name}</h3>
                   <div className="skill-experience">
-                    <i className={getExperienceIcon(skill.experience)}></i> {skill.experience}
-                    <span className="skill-years">{skill.years} {skill.years === 1 ? 'rok' : skill.years < 5 ? 'roky' : 'rokov'}</span>
+                    <i className={getExperienceIcon(skill.level)}></i> {getExperienceLevel(skill.level)}
                   </div>
                 </div>
                 <span className="skill-percentage">{skill.level}%</span>
@@ -116,20 +117,24 @@ function Skills() {
         
         <div className="skills-legend" data-aos="fade-up" data-aos-delay="300">
           <div className="legend-item">
-            <div className="legend-color" style={{ backgroundColor: '#10b981' }}></div>
-            <p>Expert (90-100%)</p>
+            <div className="legend-color" style={{ backgroundColor: '#ef4444' }}></div>
+            <p>Úplný začiatočník (&lt;20%)</p>
           </div>
           <div className="legend-item">
-            <div className="legend-color" style={{ backgroundColor: '#3b82f6' }}></div>
-            <p>Pokročilý (70-89%)</p>
+            <div className="legend-color" style={{ backgroundColor: '#f97316' }}></div>
+            <p>Začiatočník (20-39%)</p>
           </div>
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#f59e0b' }}></div>
-            <p>Stredne pokročilý (50-69%)</p>
+            <p>Mierne pokročilý (40-59%)</p>
           </div>
           <div className="legend-item">
-            <div className="legend-color" style={{ backgroundColor: '#ef4444' }}></div>
-            <p>Začiatočník (&lt;50%)</p>
+            <div className="legend-color" style={{ backgroundColor: '#3b82f6' }}></div>
+            <p>Pokročilý (60-79%)</p>
+          </div>
+          <div className="legend-item">
+            <div className="legend-color" style={{ backgroundColor: '#10b981' }}></div>
+            <p>Expert (80-100%)</p>
           </div>
         </div>
       </div>
