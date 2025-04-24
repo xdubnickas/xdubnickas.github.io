@@ -1,8 +1,11 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getText } from '../translations';
 import '../style/Footer.css';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+  const { language } = useLanguage();
 
   return (
     <footer className="modern-footer2">
@@ -14,12 +17,12 @@ function Footer() {
         <div className="footer-sections">
           <div className="footer-section" data-aos="fade-up">
             <h3>Štefan Dubnička</h3>
-            <p>Web Developer | Java Developer | Student</p>
-            <p>Vytváram moderné webové aplikácie s dôrazom na používateľský zážitok.</p>
+            <p>{getText(language, 'header.title')}</p>
+            <p>{getText(language, 'footer.description')}</p>
           </div>
           
           <div className="footer-section" data-aos="fade-up" data-aos-delay="100">
-            <h3>Kontakt</h3>
+            <h3>{getText(language, 'footer.contact')}</h3>
             <ul className="footer-contact-list">
               <li>
                 <a href="mailto:s.dubnicka2@gmail.com">
@@ -40,19 +43,19 @@ function Footer() {
           </div>
           
           <div className="footer-section" data-aos="fade-up" data-aos-delay="200">
-            <h3>Rýchle odkazy</h3>
+            <h3>{getText(language, 'footer.quickLinks')}</h3>
             <ul className="footer-links">
-              <li><a href="#about">O mne</a></li>
-              <li><a href="#projects">Projekty</a></li>
-              <li><a href="#skills">Zručnosti</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+              <li><a href="#about">{getText(language, 'nav.about')}</a></li>
+              <li><a href="#projects">{getText(language, 'nav.projects')}</a></li>
+              <li><a href="#skills">{getText(language, 'nav.skills')}</a></li>
+              <li><a href="#contact">{getText(language, 'nav.contact')}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="copyright" data-aos="fade-up" data-aos-delay="300">
-          <p>&copy; {currentYear} Štefan Dubnička. Všetky práva vyhradené.</p>
-          <p>Vytvorené s <i className="fas fa-heart"></i> a React.js</p>
+          <p>&copy; {currentYear} Štefan Dubnička. {getText(language, 'footer.copyright')}</p>
+          <p>{getText(language, 'footer.createdWith')} <i className="fas fa-heart"></i> {getText(language, 'footer.and')} React.js</p>
         </div>
       </div>
     </footer>

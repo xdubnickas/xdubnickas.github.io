@@ -1,11 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getText } from '../translations';
 
 function About() {
+  const { language } = useLanguage();
+
   return (
     <section id="about">
       <div className="container">
-        <h2 data-aos="fade-right">O mne</h2>
+        <h2 data-aos="fade-right">{getText(language, 'about.title')}</h2>
         
         <div className="about-content">
           <motion.div 
@@ -17,19 +21,13 @@ function About() {
             data-aos="fade-right"
           >
             <p>
-              Som študentom aplikovanej informatiky na STU FEI so špecializáciou na webové technológie.
-              Mám vášeň pre vytváranie moderných a používateľsky prívetivých webových aplikácií s využitím 
-              najnovších technológií.
+              {getText(language, 'about.p1')}
             </p>
             <p className="mt-4">
-              Popri štúdiu sa aktívne venujem samostatnému vzdelávaniu v oblasti webového vývoja, 
-              s dôrazom na React.js a moderné frontendové nástroje. Nadchádzam sa pre elegantné
-              riešenia komplexných problémov a snažím sa neustále zdokonaľovať svoje zručnosti.
+              {getText(language, 'about.p2')}
             </p>
             <p className="mt-4">
-              Vo voľnom čase rád experimentujem s novými technológiami, čítam technické blogy 
-              a prispievam do open-source projektov. Mojím cieľom je stať sa fullstack vývojárom 
-              s hlbokými znalosťami moderných webových technológií.
+              {getText(language, 'about.p3')}
             </p>
           </motion.div>
           

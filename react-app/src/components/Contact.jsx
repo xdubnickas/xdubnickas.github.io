@@ -1,18 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getText } from '../translations';
 import '../style/Contact.css';
 
 function Contact() {
+  const { language } = useLanguage();
+
   return (
     <section id="contact">
       <div className="container">
-        <h2 data-aos="fade-right">Kontakt</h2>
+        <h2 data-aos="fade-right">{getText(language, 'contact.title')}</h2>
         
         <div className="contact-wrapper" data-aos="fade-up" data-aos-delay="200">
           <div className="contact-info">
             <p className="contact-description">
-              Ak máte záujem o spoluprácu alebo akékoľvek otázky, neváhajte ma kontaktovať.
-              Rád odpoviem na vaše otázky v čo najkratšom čase.
+              {getText(language, 'contact.description')}
             </p>
             
             <motion.div 
@@ -30,7 +33,7 @@ function Contact() {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div className="contact-details">
-                  <h3>Email</h3>
+                  <h3>{getText(language, 'contact.email')}</h3>
                   <a href="mailto:s.dubnicka2@gmail.com">s.dubnicka2@gmail.com</a>
                 </div>
               </motion.div>
@@ -43,7 +46,7 @@ function Contact() {
                   <i className="fas fa-phone"></i>
                 </div>
                 <div className="contact-details">
-                  <h3>Telefón</h3>
+                  <h3>{getText(language, 'contact.phone')}</h3>
                   <a href="tel:+421950731620">+421 950 731 620</a>
                 </div>
               </motion.div>
@@ -56,7 +59,7 @@ function Contact() {
                   <i className="fab fa-github"></i>
                 </div>
                 <div className="contact-details">
-                  <h3>GitHub</h3>
+                  <h3>{getText(language, 'contact.github')}</h3>
                   <a href="https://github.com/xdubnickas" target="_blank" rel="noopener noreferrer">
                     github.com/xdubnickas
                   </a>

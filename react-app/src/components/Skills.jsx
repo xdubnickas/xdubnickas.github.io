@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getText } from '../translations';
 
 function Skills() {
   const [activeTab, setActiveTab] = useState("programming");
+  const { language } = useLanguage();
   
   const skillCategories = {
     programming: [
@@ -32,18 +35,18 @@ function Skills() {
   
   const getLevelColor = (level) => {
     if (level >= 80) return '#10b981'; // Expert - green
-    if (level >= 60) return '#3b82f6'; // Pokročilý - blue
-    if (level >= 40) return '#f59e0b'; // Mierne pokročilý - yellow/orange
-    if (level >= 20) return '#f97316'; // Začiatočník - orange
-    return '#ef4444'; // Úplný začiatočník - red
+    if (level >= 60) return '#3b82f6'; // Advanced - blue
+    if (level >= 40) return '#f59e0b'; // Intermediate - yellow/orange
+    if (level >= 20) return '#f97316'; // Beginner - orange
+    return '#ef4444'; // Novice - red
   };
   
   const getExperienceLevel = (level) => {
-    if (level >= 80) return 'Expert';
-    if (level >= 60) return 'Pokročilý';
-    if (level >= 40) return 'Mierne pokročilý';
-    if (level >= 20) return 'Začiatočník';
-    return 'Úplný začiatočník';
+    if (level >= 80) return getText(language, 'skills.levels.expert');
+    if (level >= 60) return getText(language, 'skills.levels.advanced');
+    if (level >= 40) return getText(language, 'skills.levels.intermediate');
+    if (level >= 20) return getText(language, 'skills.levels.beginner');
+    return getText(language, 'skills.levels.novice');
   };
   
   const getExperienceIcon = (level) => {
@@ -57,35 +60,35 @@ function Skills() {
   return (
     <section id="skills">
       <div className="container">
-        <h2 data-aos="fade-right">Technické znalosti</h2>
+        <h2 data-aos="fade-right">{getText(language, 'skills.title')}</h2>
         
         <div className="skills-tabs" data-aos="fade-up">
           <button 
             className={`skill-tab-button ${activeTab === 'programming' ? 'active' : ''}`}
             onClick={() => setActiveTab('programming')}
           >
-            <i className="fas fa-code"></i> Programovacie jazyky
+            <i className="fas fa-code"></i> {getText(language, 'skills.tabs.programming')}
           </button>
           
           <button 
             className={`skill-tab-button ${activeTab === 'frontend' ? 'active' : ''}`}
             onClick={() => setActiveTab('frontend')}
           >
-            <i className="fas fa-laptop-code"></i> Frontend
+            <i className="fas fa-laptop-code"></i> {getText(language, 'skills.tabs.frontend')}
           </button>
           
           <button 
             className={`skill-tab-button ${activeTab === 'database' ? 'active' : ''}`}
             onClick={() => setActiveTab('database')}
           >
-            <i className="fas fa-database"></i> Databázy
+            <i className="fas fa-database"></i> {getText(language, 'skills.tabs.database')}
           </button>
           
           <button 
             className={`skill-tab-button ${activeTab === 'tools' ? 'active' : ''}`}
             onClick={() => setActiveTab('tools')}
           >
-            <i className="fas fa-tools"></i> Nástroje
+            <i className="fas fa-tools"></i> {getText(language, 'skills.tabs.tools')}
           </button>
         </div>
         
@@ -118,23 +121,23 @@ function Skills() {
         <div className="skills-legend" data-aos="fade-up" data-aos-delay="300">
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#ef4444' }}></div>
-            <p>Úplný začiatočník (&lt;20%)</p>
+            <p>{getText(language, 'skills.legend.novice')}</p>
           </div>
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#f97316' }}></div>
-            <p>Začiatočník (20-39%)</p>
+            <p>{getText(language, 'skills.legend.beginner')}</p>
           </div>
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#f59e0b' }}></div>
-            <p>Mierne pokročilý (40-59%)</p>
+            <p>{getText(language, 'skills.legend.intermediate')}</p>
           </div>
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#3b82f6' }}></div>
-            <p>Pokročilý (60-79%)</p>
+            <p>{getText(language, 'skills.legend.advanced')}</p>
           </div>
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#10b981' }}></div>
-            <p>Expert (80-100%)</p>
+            <p>{getText(language, 'skills.legend.expert')}</p>
           </div>
         </div>
       </div>

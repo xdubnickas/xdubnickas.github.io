@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 
-function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, technologies }) {
+const ProjectCard = memo(({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, technologies }) => {
   return (
     <motion.div 
       className="project-card"
@@ -57,6 +57,8 @@ function ProjectCard({ title, description, imageUrl, imageAlt, githubUrl, github
       </div>
     </motion.div>
   );
-}
+});
+
+ProjectCard.displayName = 'ProjectCard';
 
 export default ProjectCard;

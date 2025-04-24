@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getText } from '../translations';
 
 function Header() {
   const canvasRef = useRef(null);
+  const { language } = useLanguage();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -118,7 +121,7 @@ function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Web Developer | Java Developer | Student
+          {getText(language, 'header.title')}
         </motion.p>
         
         <motion.div 
@@ -133,7 +136,7 @@ function Header() {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <i className="fas fa-file-pdf"></i> Stiahnuť CV
+            <i className="fas fa-file-pdf"></i> {getText(language, 'header.downloadCV')}
           </a>
           
           <a 
@@ -142,7 +145,7 @@ function Header() {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github"></i> GitHub
+            <i className="fab fa-github"></i> {getText(language, 'header.github')}
           </a>
         </motion.div>
       </div>

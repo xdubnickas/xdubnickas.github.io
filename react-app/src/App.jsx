@@ -6,6 +6,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import { LanguageProvider } from './contexts/LanguageContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
@@ -50,18 +52,21 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <div className="noise-overlay"></div>
-      <Header />
-      <Navigation onNavigate={scrollToSection} />
-      <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="app-container">
+        <div className="noise-overlay"></div>
+        <Header />
+        <Navigation onNavigate={scrollToSection} />
+        <main>
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+        <LanguageSwitcher />
+      </div>
+    </LanguageProvider>
   );
 }
 
