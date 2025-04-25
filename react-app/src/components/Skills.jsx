@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 
 function Skills() {
   const [activeTab, setActiveTab] = useState("programming");

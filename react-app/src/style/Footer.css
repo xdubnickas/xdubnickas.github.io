@@ -21,3 +21,9 @@
     padding: 0;
     background: linear-gradient(180deg, #0353a4 0%, #001845 100%);
 }
+
+.nav-item.active a {
+  color: #007bff; /* or your preferred highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* optional underline effect */
+}

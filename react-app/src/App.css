@@ -351,8 +351,13 @@ nav .container {
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
   position: relative;
+}
+
+.nav-item a.active {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .nav-item a::after {

@@ -2,6 +2,8 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 import '../style/Contact.css';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 
 function Contact() {
   const { language } = useLanguage();

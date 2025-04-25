@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 
 function About() {
   const { language } = useLanguage();

@@ -3,6 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 import '../style/LanguageSwitcher.css';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 
 const LanguageSwitcher = memo(() => {
   const { language, toggleLanguage } = useLanguage();
