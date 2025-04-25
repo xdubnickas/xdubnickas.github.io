@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import { motion } from 'framer-motion';
 
 const ProjectCard = memo(({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, technologies }) => {
   return (

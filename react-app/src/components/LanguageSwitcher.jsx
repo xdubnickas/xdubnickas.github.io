@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 import '../style/LanguageSwitcher.css';

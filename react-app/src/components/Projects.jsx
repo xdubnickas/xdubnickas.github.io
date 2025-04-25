@@ -20,8 +20,8 @@ function Projects() {
       id: 2,
       imageUrl: "/img/schedule-share2.png",
       imageAlt: "Schedule Share App",
-      githubUrl: "https://github.com/xdubnickas/schedule-share",
-      demoUrl: "https://reservation-demo.netlify.app",
+      githubUrl: "https://github.com/xdubnickas/schedule-app",
+      demoUrl: "https://hereeee.com",
       technologies: ["React", "Vite", "Tailwind CSS", "DaisyUI", "Supabase", "PostgreSQL"]
     },
     {

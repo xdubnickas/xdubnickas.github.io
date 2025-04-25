@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 import '../style/Contact.css';

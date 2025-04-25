@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 
@@ -9,10 +8,10 @@ function Skills() {
   
   const skillCategories = {
     programming: [
-      { name: 'Java (Spring Boot)', level: 60 },
+      { name: 'Java (Spring Boot)', level: 61 },
       { name: 'JavaScript', level: 60 },
-      { name: 'Python', level: 59 },
-      { name: 'C/C++', level: 55 },
+      { name: 'Python', level: 57 },
+      { name: 'C/C++', level: 52 },
       { name: 'PHP', level: 30 }
     ],
     frontend: [
@@ -23,13 +22,13 @@ function Skills() {
     ],
     database: [
       { name: 'SQL', level: 48 },
-      { name: 'PostgreSQL', level: 23 }
+      { name: 'PostgreSQL', level: 20 }
     ],
     tools: [
-      { name: 'Microsoft Office', level: 54 },
+      { name: 'Microsoft Office', level: 55 },
       { name: 'Git & GitHub', level: 40 },
-      { name: 'UML diagramy', level: 40 },
-      { name: 'Docker', level: 27 }
+      { name: 'UML diagramy', level: 44 },
+      { name: 'Docker', level: 26 }
     ]
   };
   
@@ -118,7 +117,7 @@ function Skills() {
           ))}
         </div>
         
-        <div className="skills-legend" data-aos="fade-up" data-aos-delay="300">
+        <div className="skills-legend" data-aos="fade-up" data-aos-delay="30">
           <div className="legend-item">
             <div className="legend-color" style={{ backgroundColor: '#ef4444' }}></div>
             <p>{getText(language, 'skills.legend.novice')}</p>

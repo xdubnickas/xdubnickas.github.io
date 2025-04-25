@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 
 // This component only re-renders when language changes or props change
-const TranslatedText = memo(({ path, as: Component = 'span', fallback = '', ...props }) => {
+const TranslatedText = memo(({ path, fallback = '', ...props }) => {
   const { language } = useLanguage();
   const translatedText = getText(language, path) || fallback;
   

@@ -322,7 +322,7 @@ header .container, .animated-header .container {
 /* Navigation Styles */
 nav {
   background-color: white;
-  padding: 1.2rem 0;
+  padding: 1.3rem 0;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
@@ -331,7 +331,7 @@ nav {
 }
 
 nav.scrolled {
-  padding: 0.7rem 0;
+  padding: 0.8rem 0;
 }
 
 nav .container {

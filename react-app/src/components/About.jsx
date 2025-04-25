@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 
@@ -25,9 +24,6 @@ function About() {
             </p>
             <p className="mt-4">
               {getText(language, 'about.p2')}
-            </p>
-            <p className="mt-4">
-              {getText(language, 'about.p3')}
             </p>
           </motion.div>
           

@@ -16,9 +16,8 @@ export const translations = {
     // About
     about: {
       title: "O mne",
-      p1: "Som študentom aplikovanej informatiky na STU FEI so špecializáciou na webové technológie. Mám vášeň pre vytváranie moderných a používateľsky prívetivých webových aplikácií s využitím najnovších technológií.",
-      p2: "Popri štúdiu sa aktívne venujem samostatnému vzdelávaniu v oblasti webového vývoja, s dôrazom na React.js a moderné frontendové nástroje. Nadchádzam sa pre elegantné riešenia komplexných problémov a snažím sa neustále zdokonaľovať svoje zručnosti.",
-      p3: "Vo voľnom čase rád experimentujem s novými technológiami, čítam technické blogy a prispievam do open-source projektov. Mojím cieľom je stať sa fullstack vývojárom s hlbokými znalosťami moderných webových technológií."
+      p1: "Som študentom aplikovanej informatiky na STU FEI so zameraním na webové technológie. Momentálne sa zaujímam o rôzne oblasti vývoja, od frontendových technológií ako React až po backend s Javou, a láka ma postupne prejsť do roly fullstack vývojára, kde môžem prepájať oba svety do funkčných a praktických riešení.",
+      p2: "Vo voľnom čase rád objavujem nové technológie, rozvíjam svoje zručnosti, sledujem trendy v oblasti vývoja a venujem sa projektom, ktoré ma posúvajú ďalej. Rád tiež programujem vlastné nápady a projekty, pri ktorých sa učím nové veci. Okrem IT ma baví aj práca s hardvérom - skladám a optimalizujem počítače, sledujem novinky zo sveta komponentov a rád pomáham iným s výberom alebo úpravou zostáv. Vo voľnom čase tiež rád cvičím, chodím do prírody a venujem sa strihu videí.",
     },
     // Projects
     projects: {
@@ -124,11 +123,11 @@ export const translations = {
     },
     // About
     about: {
-      title: "About me",
-      p1: "I'm a student of Applied Informatics at STU FEI with a specialization in web technologies. I have a passion for creating modern and user-friendly web applications using the latest technologies.",
-      p2: "Besides my studies, I actively engage in self-education in web development, focusing on React.js and modern frontend tools. I enjoy finding elegant solutions to complex problems and I constantly strive to improve my skills.",
-      p3: "In my free time, I like experimenting with new technologies, reading technical blogs, and contributing to open-source projects. My goal is to become a fullstack developer with deep knowledge of modern web technologies."
+      title: "About Me",
+      p1: "I'm a student of Applied Informatics at STU FEI, specializing in web technologies. I'm currently exploring various areas of development, from frontend technologies like React to backend with Java. I'm interested in becoming a fullstack developer, where I can combine both sides to create functional and practical solutions.",
+      p2: "In my free time, I enjoy discovering new technologies, improving my skills, following development trends, and working on projects that push me forward. I also like programming my own ideas and projects, which help me learn new things along the way. Outside of IT, I’m passionate about hardware – I build and optimize PCs, stay up to date with the latest component news, and enjoy helping others with selecting or upgrading their setups. I also like working out, spending time in nature, and editing videos.",
     },
+    
     // Projects
     projects: {
       title: "My projects",

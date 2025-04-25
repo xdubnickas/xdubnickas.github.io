@@ -6,13 +6,15 @@ This repository contains the source code for my personal portfolio website, host
 
 - Responsive design that works on desktop and mobile devices
 - Clean and modern UI with smooth animations
+- Multi-language support (English and Slovak)
 - Sections for About, Projects, Skills, and Contact information
-- Simple contact form for potential clients or employers to reach out
 
 ## Technologies Used
 
 - React.js
 - CSS3 (with Flexbox and CSS Grid)
+- AOS (Animate On Scroll) library
+- React Context API for state management
 - Component-based architecture
 - GitHub Pages for hosting
 
@@ -34,13 +36,6 @@ cd react-app
 npm start
 ```
 
-## Future Improvements
-
-- Add a blog section
-- Implement dark mode
-- Add more interactive elements
-- Integrate a backend for the contact form
-- Add state management for larger application growth
 
 ## License
 
