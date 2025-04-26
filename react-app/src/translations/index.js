@@ -9,7 +9,7 @@ export const translations = {
     },
     // Header
     header: {
-      title: "Študent",
+      title: "FEI Študent",
       downloadCV: "Stiahnuť CV",
       github: "GitHub"
     },
@@ -122,7 +122,7 @@ export const translations = {
     },
     // Header
     header: {
-      title: "Student",
+      title: "FEI Student",
       downloadCV: "Download CV",
       github: "GitHub"
     },
