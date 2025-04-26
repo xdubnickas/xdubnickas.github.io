@@ -21,7 +21,7 @@ function Projects() {
       imageUrl: "/img/schedule-share2.png",
       imageAlt: "Schedule Share App",
       githubUrl: "https://github.com/xdubnickas/schedule-app",
-      demoUrl: "https://hereeee.com",
+      demoUrl: "https://schedule-app-xdubnickas-projects.vercel.app/",
       technologies: ["React", "Vite", "Tailwind CSS", "DaisyUI", "Supabase", "PostgreSQL"]
     },
     {
@@ -67,6 +67,14 @@ function Projects() {
       ],
       demoUrl: null,
       technologies: ["Java", "Spring Boot", "REST API", "AWT/Swing", "OOP"]
+    },
+    {
+      id: 8,
+      imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageAlt: "More Projects",
+      githubUrl: "https://github.com/xdubnickas?tab=repositories",
+      demoUrl: null,
+      technologies: ["C", "C++", "Python"]
     }
   ];
 

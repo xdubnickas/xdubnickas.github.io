@@ -57,6 +57,11 @@ export const translations = {
           id: 7,
           title: "Školské zadania OOP",
           description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite."
+        },
+        {
+          id: 8,
+          title: "A ďalšie...",
+          description: "Rôzne školské a osobné projekty z rôznych technológií. Navštívte môj GitHub pre úplný prehľad všetkých projektov."
         }
       ]
     },
@@ -166,6 +171,11 @@ export const translations = {
           id: 7,
           title: "OOP School Assignments",
           description: "Series of object-oriented programming projects: E-shop API in Spring Boot, WaterPipes game with AWT/Swing, and simplified BANG Lite card game."
+        },
+        {
+          id: 8,
+          title: "And more...",
+          description: "Various school and personal projects using different technologies. Visit my GitHub for a complete overview of all projects."
         }
       ]
     },

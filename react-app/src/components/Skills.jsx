@@ -18,7 +18,7 @@ function Skills() {
     ],
     frontend: [
       { name: 'HTML/CSS', level: 60 },
-      { name: 'React.js', level: 48 },
+      { name: 'React.js', level: 50 },
       { name: 'Bootstrap', level: 45 },
       { name: 'Tailwind CSS', level: 15 }
     ],
