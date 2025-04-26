@@ -39,7 +39,7 @@ function About() {
           >
             <div className="profile-image-container">
               <img 
-                src="/img/profile-photo2.jpg" 
+                src="img/profile-photo2.jpg" 
                 alt="Štefan Dubnička" 
                 className="profile-image"
               />

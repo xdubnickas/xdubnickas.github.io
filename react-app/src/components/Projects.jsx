@@ -10,7 +10,7 @@ function Projects() {
   const baseProjectsData = [
     {
       id: 1,
-      imageUrl: "/img/event-organizer-dashboard.png",
+      imageUrl: "img/event-organizer-dashboard.png",
       imageAlt: "Reservation System",
       githubUrl: "https://github.com/xdubnickas/reservetion-app",
       demoUrl: null,
@@ -18,7 +18,7 @@ function Projects() {
     },
     {
       id: 2,
-      imageUrl: "/img/schedule-share2.png",
+      imageUrl: "img/schedule-share2.png",
       imageAlt: "Schedule Share App",
       githubUrl: "https://github.com/xdubnickas/schedule-app",
       demoUrl: "https://schedule-app-xdubnickas-projects.vercel.app/",
@@ -26,7 +26,7 @@ function Projects() {
     },
     {
       id: 3,
-      imageUrl: "/img/brightness.png",
+      imageUrl: "img/brightness.png",
       imageAlt: "Brightness Control",
       githubUrl: "https://github.com/xdubnickas/brightness-control",
       demoUrl: null,
@@ -42,7 +42,7 @@ function Projects() {
     },
     {
       id: 5,
-      imageUrl: "/img/rapidracergame.png",
+      imageUrl: "img/rapidracergame.png",
       imageAlt: "Racing Game",
       githubUrl: "https://github.com/xdubnickas/racing-game",
       demoUrl: null,
