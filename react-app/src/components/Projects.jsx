@@ -12,7 +12,7 @@ function Projects() {
       id: 1,
       imageUrl: "/img/event-organizer-dashboard.png",
       imageAlt: "Reservation System",
-      githubUrl: "https://github.com/xdubnickas/reservation-system",
+      githubUrl: "https://github.com/xdubnickas/reservetion-app",
       demoUrl: null,
       technologies: ["Spring Boot", "React", "MySQL", "Docker", "Bootstrap", "REST API", "JWT Authentication"]
     },
