@@ -3,6 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import profilePhoto from '../assets/profile-photo2.jpg';
 
 function About() {
   const { language } = useLanguage();
@@ -39,7 +40,7 @@ function About() {
           >
             <div className="profile-image-container">
               <img 
-                src="img/profile-photo2.jpg" 
+                src={profilePhoto} 
                 alt="Štefan Dubnička" 
                 className="profile-image"
               />

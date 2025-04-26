@@ -3,6 +3,13 @@ import ProjectCard from './ProjectCard';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getText } from '../translations';
 
+// Image imports
+import eventOrganizerDashboard from '../assets/event-organizer-dashboard.png';
+import scheduleShare from '../assets/schedule-share2.png';
+import brightness from '../assets/brightness.png';
+import rapidRacerGame from '../assets/rapidracergame.png';
+// Portfolio website image can also be moved to assets
+
 function Projects() {
   const { language } = useLanguage();
   
@@ -10,7 +17,7 @@ function Projects() {
   const baseProjectsData = [
     {
       id: 1,
-      imageUrl: "img/event-organizer-dashboard.png",
+      imageUrl: eventOrganizerDashboard,
       imageAlt: "Reservation System",
       githubUrl: "https://github.com/xdubnickas/reservetion-app",
       demoUrl: null,
@@ -18,7 +25,7 @@ function Projects() {
     },
     {
       id: 2,
-      imageUrl: "img/schedule-share2.png",
+      imageUrl: scheduleShare,
       imageAlt: "Schedule Share App",
       githubUrl: "https://github.com/xdubnickas/schedule-app",
       demoUrl: "https://schedule-app-xdubnickas-projects.vercel.app/",
@@ -26,7 +33,7 @@ function Projects() {
     },
     {
       id: 3,
-      imageUrl: "img/brightness.png",
+      imageUrl: brightness,
       imageAlt: "Brightness Control",
       githubUrl: "https://github.com/xdubnickas/brightness-control",
       demoUrl: null,
@@ -42,7 +49,7 @@ function Projects() {
     },
     {
       id: 5,
-      imageUrl: "img/rapidracergame.png",
+      imageUrl: rapidRacerGame,
       imageAlt: "Racing Game",
       githubUrl: "https://github.com/xdubnickas/racing-game",
       demoUrl: null,
