@@ -23,7 +23,7 @@ function Skills() {
       { name: 'Tailwind CSS', level: 15 }
     ],
     database: [
-      { name: 'SQL', level: 48 },
+      { name: 'MySQL', level: 48 },
       { name: 'PostgreSQL', level: 20 }
     ],
     tools: [
