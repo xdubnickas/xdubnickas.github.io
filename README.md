@@ -11,7 +11,7 @@ This repository contains the source code for my personal portfolio website, host
 
 ## Technologies Used
 
-- React.js
+- React
 - CSS3 (with Flexbox and CSS Grid)
 - AOS (Animate On Scroll) library
 - React Context API for state management

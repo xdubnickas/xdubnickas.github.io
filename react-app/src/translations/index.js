@@ -51,7 +51,7 @@ export const translations = {
         {
           id: 6,
           title: "Portfolio stránka",
-          description: "Moje osobné portfólio vytvorené pomocou React.js s moderným dizajnom a animáciami."
+          description: "Moje osobné portfólio vytvorené pomocou React s moderným dizajnom a animáciami."
         },
         {
           id: 7,
@@ -165,7 +165,7 @@ export const translations = {
         {
           id: 6,
           title: "Portfolio Website",
-          description: "My personal portfolio created with React.js featuring modern design and animations."
+          description: "My personal portfolio created with React featuring modern design and animations."
         },
         {
           id: 7,
