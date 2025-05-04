@@ -21,7 +21,7 @@ function Projects() {
       imageAlt: "Reservation System",
       githubUrl: "https://github.com/xdubnickas/reservetion-app",
       demoUrl: null,
-      technologies: ["Spring Boot", "React", "MySQL", "Docker", "Bootstrap", "REST API", "JWT Authentication"]
+      technologies: ["Spring Boot", "React", "MySQL", "Docker", "Bootstrap", "REST API", "JWT Authentication", "Spring Security"]
     },
     {
       id: 2,

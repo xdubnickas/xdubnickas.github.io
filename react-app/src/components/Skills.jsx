@@ -10,10 +10,10 @@ function Skills() {
   
   const skillCategories = {
     programming: [
-      { name: 'Java (Spring Boot)', level: 61 },
+      { name: 'Java (Spring Boot)', level: 60 },
       { name: 'JavaScript', level: 60 },
-      { name: 'Python', level: 57 },
-      { name: 'C/C++', level: 52 },
+      { name: 'Python', level: 55 },
+      { name: 'C/C++', level: 48 },
       { name: 'PHP', level: 30 }
     ],
     frontend: [
@@ -30,7 +30,7 @@ function Skills() {
       { name: 'Microsoft Office', level: 55 },
       { name: 'Git & GitHub', level: 40 },
       { name: 'UML diagramy', level: 44 },
-      { name: 'Docker', level: 26 }
+      { name: 'Docker', level: 22 }
     ]
   };
   

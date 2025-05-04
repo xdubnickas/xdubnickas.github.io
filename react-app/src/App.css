@@ -938,6 +938,10 @@ h2::after {
   .nav-list {
     gap: 1rem;
   }
+
+  .nav-item a {
+    padding: 0.5rem;
+  }
   
   .about-content {
     flex-direction: column;
@@ -992,5 +996,11 @@ h2::after {
   
   .project-content {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 409px) {
+  .nav-item a {
+    padding: 0rem;
   }
 }
