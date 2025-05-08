@@ -1,4 +1,3 @@
-
 /* Adding glow effects to enhance the modern look */
 .modern-footer::before {
   content: '';
@@ -15,15 +14,37 @@
 
 
 .modern-footer2 {
-  position: unset;
-    color: white;
-    margin-top: 4rem;
-    padding: 0;
-    background: linear-gradient(180deg, #0353a4 0%, #001845 100%);
+  position: relative;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #0353a4 0%, #001845 100%);
+  overflow: hidden; /* Prevent any stretching issues */
 }
 
 .nav-item.active a {
   color: #007bff; /* or your preferred highlight color */
   font-weight: bold;
   border-bottom: 2px solid #007bff; /* optional underline effect */
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  height: auto;
+  min-height: 50px;
+  overflow: hidden;
+  transform: none !important; /* Prevent AOS from stretching */
+}
+
+.copyright [data-aos] {
+  transform: none !important; /* Ensure stable transform */
+  opacity: 1;
+}
+
+.footer-content {
+  padding-bottom: 0;
 }
