@@ -17,7 +17,7 @@ export const translations = {
     about: {
       title: "O mne",
       p1: "Som študentom aplikovanej informatiky na STU FEI so zameraním na webové technológie. Momentálne sa zaujímam o rôzne oblasti vývoja, od frontendových technológií ako React až po backend s Javou, a láka ma postupne prejsť do roly fullstack vývojára, kde môžem prepájať oba svety do funkčných a praktických riešení.",
-      p2: "Vo voľnom čase rád objavujem nové technológie, rozvíjam svoje zručnosti, sledujem trendy v oblasti vývoja a venujem sa projektom, ktoré ma posúvajú ďalej. Rád tiež programujem vlastné nápady a projekty, pri ktorých sa učím nové veci. Okrem IT ma baví aj práca s hardvérom - skladám a optimalizujem počítače, sledujem novinky zo sveta komponentov a rád pomáham iným s výberom alebo úpravou zostáv. Vo voľnom čase tiež rád cvičím, chodím do prírody a venujem sa strihu videí.",
+      p2: "Vo voľnom čase rád objavujem nové technológie, rozvíjam svoje zručnosti, sledujem trendy v oblasti vývoja a venujem sa projektom, ktoré ma posúvajú ďalej. Rád tiež programujem vlastné nápady a projekty, pri ktorých sa učím nové veci. Okrem IT ma baví aj práca s hardvérom - skladám a optimalizujem počítače, sledujem novinky zo sveta komponentov a rád pomáham iným s výberom alebo úpravou zostáv. Vo voľnom čase tiež rád cvičím, chodím do prírody a venujem sa editovaniu videí.",
     },
     // Projects
     projects: {
