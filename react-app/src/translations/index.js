@@ -57,16 +57,15 @@ export const translations = {
           id: 7,
           title: "Školské zadania OOP",
           description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite."
-        },
-        {
+        },        {
           id: 8,
-          title: "Web Technológie 1",
-          description: "4 zadania z predmetu WebTe 1 zamerané na frontend - HTML, CSS, JavaScript, knižnice na grafy (Chart.js) a interaktívne mapy (OpenStreetMap/Leaflet)."
+          title: "Školské zadania WEBTE1",
+          description: "Projekty z webových technológií: responzívna stránka, grafy pomocou Chart.js, interaktívna mapa s OpenStreetMap a DOM manipulácie v JavaScripte."
         },
         {
           id: 9,
-          title: "Web Technológie 2",
-          description: "4 zadania z predmetu WebTe 2 kombinujúce frontend aj backend - PHP, JavaScript, práca s databázami a REST API."
+          title: "Školské zadania WEBTE2",
+          description: "Fullstack webové aplikácie: PHP backend s MySQL databázou, REST API služby, dynamické frontend riešenia a CRUD operácie s autentifikáciou používateľov."
         },
         {
           id: 10,
@@ -181,16 +180,15 @@ export const translations = {
           id: 7,
           title: "OOP School Assignments",
           description: "Series of object-oriented programming projects: E-shop API in Spring Boot, WaterPipes game with AWT/Swing, and simplified BANG Lite card game."
-        },
-        {
+        },        {
           id: 8,
-          title: "Web Technologies 1",
-          description: "4 assignments from WebTe 1 course focused on frontend - HTML, CSS, JavaScript, chart libraries (Chart.js) and interactive maps (OpenStreetMap/Leaflet)."
+          title: "School Assignments WEBTE1",
+          description: "Web technologies projects: responsive website design, dynamic charts using Chart.js, interactive maps with OpenStreetMap, and JavaScript DOM manipulations."
         },
         {
           id: 9,
-          title: "Web Technologies 2",
-          description: "4 assignments from WebTe 2 course combining frontend and backend - PHP, JavaScript, database work and REST APIs."
+          title: "School Assignments WEBTE2",
+          description: "Fullstack web applications: PHP backend with MySQL database, REST API services, dynamic frontend solutions, and CRUD operations with user authentication."
         },
         {
           id: 10,
