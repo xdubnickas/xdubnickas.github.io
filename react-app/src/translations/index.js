@@ -254,11 +254,7 @@ export const getText = (language, path) => {
   let result = translations[language];
   for (const key of keys) {
     if (!result || !result[key]) return null;
-
-
-
-
-};  return result;  }    result = result[key];    result = result[key];
+      result = result[key];
   }
   
   return result;
