@@ -60,6 +60,16 @@ export const translations = {
         },
         {
           id: 8,
+          title: "Web Technológie 1",
+          description: "4 zadania z predmetu WebTe 1 zamerané na frontend - HTML, CSS, JavaScript, knižnice na grafy (Chart.js) a interaktívne mapy (OpenStreetMap/Leaflet)."
+        },
+        {
+          id: 9,
+          title: "Web Technológie 2",
+          description: "4 zadania z predmetu WebTe 2 kombinujúce frontend aj backend - PHP, JavaScript, práca s databázami a REST API."
+        },
+        {
+          id: 10,
           title: "A ďalšie...",
           description: "Rôzne školské a osobné projekty z rôznych technológií. Navštívte môj GitHub pre úplný prehľad všetkých projektov."
         }
@@ -174,6 +184,16 @@ export const translations = {
         },
         {
           id: 8,
+          title: "Web Technologies 1",
+          description: "4 assignments from WebTe 1 course focused on frontend - HTML, CSS, JavaScript, chart libraries (Chart.js) and interactive maps (OpenStreetMap/Leaflet)."
+        },
+        {
+          id: 9,
+          title: "Web Technologies 2",
+          description: "4 assignments from WebTe 2 course combining frontend and backend - PHP, JavaScript, database work and REST APIs."
+        },
+        {
+          id: 10,
           title: "And more...",
           description: "Various school and personal projects using different technologies. Visit my GitHub for a complete overview of all projects."
         }
@@ -234,7 +254,11 @@ export const getText = (language, path) => {
   let result = translations[language];
   for (const key of keys) {
     if (!result || !result[key]) return null;
-    result = result[key];
+
+
+
+
+};  return result;  }    result = result[key];    result = result[key];
   }
   
   return result;

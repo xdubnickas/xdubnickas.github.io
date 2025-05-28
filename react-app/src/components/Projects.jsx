@@ -77,6 +77,22 @@ function Projects() {
     },
     {
       id: 8,
+      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageAlt: "Web Technologies 1",
+      githubUrl: "https://github.com/xdubnickas/web-technologie-1",
+      demoUrl: null,
+      technologies: ["HTML5", "CSS3", "JavaScript", "Chart.js", "OpenStreetMap"]
+    },
+    {
+      id: 9,
+      imageUrl: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageAlt: "Web Technologies 2",
+      githubUrl: "https://github.com/xdubnickas/web-technologie-2",
+      demoUrl: null,
+      technologies: ["PHP", "JavaScript", "MySQL", "REST API", "AJAX", "JSON"]
+    },
+    {
+      id: 10,
       imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "More Projects",
       githubUrl: "https://github.com/xdubnickas?tab=repositories",
