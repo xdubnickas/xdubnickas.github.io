@@ -54,17 +54,23 @@ function Projects() {
       githubUrl: "https://github.com/xdubnickas/racing-game",
       demoUrl: null,
       technologies: ["HTML5", "CSS3", "JavaScript", "PWA", "Device Sensors API"]
+    },    {
+      id: 6,
+      imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageAlt: "Trading212 Tracker",
+      githubUrl: "https://github.com/xdubnickas/trading212-tracker",
+      demoUrl: "https://trading212-tracker.vercel.app/",
+      technologies: ["React", "JavaScript", "Trading212 API", "Chart.js"]
     },
     {
-      id: 6,
+      id: 7,
       imageUrl: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "Portfolio",
       githubUrl: "https://github.com/xdubnickas/xdubnickas.github.io",
       demoUrl: null,
       technologies: ["React", "CSS3", "Framer Motion", "GitHub Pages"]
-    },
-    {
-      id: 7,
+    },    {
+      id: 8,
       imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "OOP School Projects",
       githubIcons: [
@@ -76,7 +82,7 @@ function Projects() {
       technologies: ["Java", "Spring Boot", "REST API", "AWT/Swing", "OOP"]
     },
     {
-      id: 8,
+      id: 9,
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "Web Technologies 1",
       githubUrl: "https://github.com/xdubnickas/web-technologie-1",
@@ -84,7 +90,7 @@ function Projects() {
       technologies: ["HTML5", "CSS3", "JavaScript", "Chart.js", "OpenStreetMap"]
     },
     {
-      id: 9,
+      id: 10,
       imageUrl: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "Web Technologies 2",
       githubUrl: "https://github.com/xdubnickas/web-technologie-2",
@@ -92,7 +98,7 @@ function Projects() {
       technologies: ["PHP", "JavaScript", "MySQL", "REST API", "AJAX", "JSON"]
     },
     {
-      id: 10,
+      id: 11,
       imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       imageAlt: "More Projects",
       githubUrl: "https://github.com/xdubnickas?tab=repositories",

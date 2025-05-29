@@ -47,28 +47,30 @@ export const translations = {
           id: 5,
           title: "Racing Game",
           description: "Multiplatformová PWA hra s gyro ovládaním pre mobily a klávesnicou/myšou pre desktop."
-        },
-        {
+        },        {
           id: 6,
-          title: "Portfolio stránka",
-          description: "Moje osobné portfólio vytvorené pomocou React s moderným dizajnom a animáciami."
+          title: "Trading212 Tracker",
+          description: "Webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje lepšie nástroje na analýzu ako natívne riešenie platformy. Projekt je momentálne vo vývoji."
         },
         {
           id: 7,
+          title: "Portfolio stránka",
+          description: "Moje osobné portfólio vytvorené pomocou React s moderným dizajnom a animáciami."
+        },        {
+          id: 8,
           title: "Školské zadania OOP",
           description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite."
         },        {
-          id: 8,
+          id: 9,
           title: "Školské zadania WEBTE1",
           description: "Projekty z webových technológií: responzívna stránka, grafy pomocou Chart.js, interaktívna mapa s OpenStreetMap a DOM manipulácie v JavaScripte."
         },
         {
-          id: 9,
+          id: 10,
           title: "Školské zadania WEBTE2",
           description: "Fullstack webové aplikácie: PHP backend s MySQL databázou, REST API služby, dynamické frontend riešenia a CRUD operácie s autentifikáciou používateľov."
-        },
-        {
-          id: 10,
+        },{
+          id: 11,
           title: "A ďalšie...",
           description: "Rôzne školské a osobné projekty z rôznych technológií. Navštívte môj GitHub pre úplný prehľad všetkých projektov."
         }
@@ -170,28 +172,30 @@ export const translations = {
           id: 5,
           title: "Racing Game",
           description: "A cross-platform PWA game with gyro controls for mobile and keyboard/mouse for desktop."
-        },
-        {
+        },        {
           id: 6,
-          title: "Portfolio Website",
-          description: "My personal portfolio created with React featuring modern design and animations."
+          title: "Trading212 Tracker",
+          description: "Web application for tracking Trading212 investment portfolio using their public API. Provides better analysis tools than the platform's native solution. Project is currently in development."
         },
         {
           id: 7,
+          title: "Portfolio Website",
+          description: "My personal portfolio created with React featuring modern design and animations."
+        },        {
+          id: 8,
           title: "OOP School Assignments",
           description: "Series of object-oriented programming projects: E-shop API in Spring Boot, WaterPipes game with AWT/Swing, and simplified BANG Lite card game."
         },        {
-          id: 8,
+          id: 9,
           title: "School Assignments WEBTE1",
           description: "Web technologies projects: responsive website design, dynamic charts using Chart.js, interactive maps with OpenStreetMap, and JavaScript DOM manipulations."
         },
         {
-          id: 9,
+          id: 10,
           title: "School Assignments WEBTE2",
           description: "Fullstack web applications: PHP backend with MySQL database, REST API services, dynamic frontend solutions, and CRUD operations with user authentication."
-        },
-        {
-          id: 10,
+        },{
+          id: 11,
           title: "And more...",
           description: "Various school and personal projects using different technologies. Visit my GitHub for a complete overview of all projects."
         }
