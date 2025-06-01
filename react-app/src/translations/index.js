@@ -50,7 +50,7 @@ export const translations = {
         },        {
           id: 6,
           title: "Trading212 Tracker",
-          description: "Webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje lepšie nástroje na analýzu ako natívne riešenie platformy. Projekt je momentálne vo vývoji."
+          description: "Webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje lepšie nástroje na analýzu ako natívne riešenie platformy."
         },
         {
           id: 7,
@@ -175,7 +175,7 @@ export const translations = {
         },        {
           id: 6,
           title: "Trading212 Tracker",
-          description: "Web application for tracking Trading212 investment portfolio using their public API. Provides better analysis tools than the platform's native solution. Project is currently in development."
+          description: "Web application for tracking Trading212 investment portfolio using their public API. Provides better analysis tools than the platform's native solution."
         },
         {
           id: 7,
