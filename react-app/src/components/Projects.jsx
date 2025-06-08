@@ -8,6 +8,7 @@ import eventOrganizerDashboard from '../assets/event-organizer-dashboard.png';
 import scheduleShare from '../assets/schedule-share2.png';
 import brightness from '../assets/brightness.png';
 import rapidRacerGame from '../assets/rapidracergame.png';
+import trading212 from '../assets/trading212.png';
 // Portfolio website image can also be moved to assets
 
 function Projects() {
@@ -56,7 +57,7 @@ function Projects() {
       technologies: ["HTML5", "CSS3", "JavaScript", "PWA", "Device Sensors API"]
     },    {
       id: 6,
-      imageUrl: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageUrl: trading212,
       imageAlt: "Trading212 Tracker",
       githubUrl: "https://github.com/xdubnickas/trading212-tracker",
       demoUrl: "https://trading212-tracker.vercel.app/",
