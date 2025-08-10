@@ -55,7 +55,7 @@ export const translations = {
         },        {
           id: 7,
           title: "Droply",
-          description: "Jednoduchá aplikácia na zdieľanie osobného obsahu medzi zariadeniami, kde každý používateľ môže vidieť a spravovať len svoj vlastný obsah."
+          description: "Jednoduchá aplikácia na zdieľanie osobného obsahu medzi zariadeniami, kde každý používateľ môže vidieť a spravovať svoj vlastný obsah."
         },
         {
           id: 8,
@@ -186,7 +186,7 @@ export const translations = {
         {
           id: 7,
           title: "Droply",
-          description: "A simple app for sharing your personal content across devices where each user can only see and manage their own content."
+          description: "A simple app for sharing your personal content across devices where each user can see and manage their own content."
         },
         {
           id: 8,
