@@ -10,27 +10,29 @@ function Skills() {
   
   const skillCategories = {
     programming: [
-      { name: 'Java (Spring Boot)', level: 60 },
-      { name: 'JavaScript', level: 60 },
-      { name: 'Python', level: 55 },
-      { name: 'C/C++', level: 48 },
+      { name: 'Java (Spring Boot)', level: 54 },
+      { name: 'JavaScript', level: 53 },
+      { name: 'Python', level: 45 },
+      { name: 'C/C++', level: 45 },
       { name: 'PHP', level: 30 }
     ],
     frontend: [
-      { name: 'HTML/CSS', level: 60 },
-      { name: 'React', level: 50 },
+      { name: 'HTML/CSS', level: 55 },
+      { name: 'React', level: 55 },
       { name: 'Bootstrap', level: 45 },
       { name: 'Tailwind CSS', level: 15 }
     ],
     database: [
-      { name: 'MySQL', level: 48 },
+      { name: 'MySQL', level: 45 },
       { name: 'PostgreSQL', level: 20 }
     ],
     tools: [
       { name: 'Microsoft Office', level: 55 },
       { name: 'Git & GitHub', level: 40 },
       { name: 'UML diagramy', level: 44 },
-      { name: 'Docker', level: 22 }
+      { name: 'Docker', level: 22 },
+      { name: 'Supabase', level: 20 },
+      { name: 'Vercel', level: 15 }
     ]
   };
   

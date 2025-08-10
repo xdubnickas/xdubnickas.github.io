@@ -16,7 +16,7 @@ export const translations = {
     // About
     about: {
       title: "O mne",
-      p1: "Som študentom aplikovanej informatiky na STU FEI so zameraním na webové technológie. Momentálne sa zaujímam o rôzne oblasti vývoja, od frontendových technológií ako React až po backend s Javou, a láka ma postupne prejsť do roly fullstack vývojára, kde môžem prepájať oba svety do funkčných a praktických riešení.",
+      p1: "Som absolventom bakalárskeho štúdia aplikovanej informatiky na STU FEI a momentálne pokračujem v inžinierskom štúdiu so zameraním na webové technológie. Zaujímam sa o rôzne oblasti vývoja, od frontendových technológií ako React až po backend s Javou, a postupne sa rozvíjam ako fullstack vývojár, kde môžem prepájať oba svety do funkčných a praktických riešení.",
       p2: "Vo voľnom čase rád objavujem nové technológie, rozvíjam svoje zručnosti, sledujem trendy v oblasti vývoja a venujem sa projektom, ktoré ma posúvajú ďalej. Rád tiež programujem vlastné nápady a projekty, pri ktorých sa učím nové veci. Okrem IT ma baví aj práca s hardvérom - skladám a optimalizujem počítače, sledujem novinky zo sveta komponentov a rád pomáham iným s výberom alebo úpravou zostáv. Vo voľnom čase tiež rád cvičím, chodím do prírody a venujem sa editovaniu videí.",
     },
     // Projects
@@ -40,37 +40,42 @@ export const translations = {
         },
         {
           id: 4,
-          title: "Hlasovací systém",
-          description: "Online hlasovací systém pre prednášky s rôznymi typmi otázok, QR kódmi a komplexným administrátorským rozhraním. Tímový projekt."
-        },
-        {
-          id: 5,
-          title: "Racing Game",
-          description: "Multiplatformová PWA hra s gyro ovládaním pre mobily a klávesnicou/myšou pre desktop."
-        },        {
-          id: 6,
           title: "Trading212 Tracker",
           description: "Webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje lepšie nástroje na analýzu ako natívne riešenie platformy."
         },
         {
+          id: 5,
+          title: "Hlasovací systém",
+          description: "Online hlasovací systém pre prednášky s rôznymi typmi otázok, QR kódmi a komplexným administrátorským rozhraním. Tímový projekt."
+        },
+        {
+          id: 6,
+          title: "Racing Game",
+          description: "Multiplatformová PWA hra s gyro ovládaním pre mobily a klávesnicou/myšou pre desktop."
+        },        {
           id: 7,
+          title: "Droply",
+          description: "Jednoduchá aplikácia na zdieľanie osobného obsahu medzi zariadeniami, kde každý používateľ môže vidieť a spravovať len svoj vlastný obsah."
+        },
+        {
+          id: 8,
           title: "Portfolio stránka",
           description: "Moje osobné portfólio vytvorené pomocou React s moderným dizajnom a animáciami."
         },        {
-          id: 8,
+          id: 9,
           title: "Školské zadania OOP",
           description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite."
         },        {
-          id: 9,
+          id: 10,
           title: "Školské zadania WEBTE1",
           description: "Projekty z webových technológií: responzívna stránka, grafy pomocou Chart.js, interaktívna mapa s OpenStreetMap a DOM manipulácie v JavaScripte."
         },
         {
-          id: 10,
+          id: 11,
           title: "Školské zadania WEBTE2",
           description: "Fullstack webové aplikácie: PHP backend s MySQL databázou, REST API služby, dynamické frontend riešenia a CRUD operácie s autentifikáciou používateľov."
         },{
-          id: 11,
+          id: 12,
           title: "A ďalšie...",
           description: "Rôzne školské a osobné projekty z rôznych technológií. Navštívte môj GitHub pre úplný prehľad všetkých projektov."
         }
@@ -140,8 +145,8 @@ export const translations = {
     // About
     about: {
       title: "About Me",
-      p1: "I'm a student of Applied Informatics at STU FEI, specializing in web technologies. I'm currently exploring various areas of development, from frontend technologies like React to backend with Java. I'm interested in becoming a fullstack developer, where I can combine both sides to create functional and practical solutions.",
-      p2: "In my free time, I enjoy discovering new technologies, improving my skills, following development trends, and working on projects that push me forward. I also like programming my own ideas and projects, which help me learn new things along the way. Outside of IT, I’m passionate about hardware – I build and optimize PCs, stay up to date with the latest component news, and enjoy helping others with selecting or upgrading their setups. I also like working out, spending time in nature, and editing videos.",
+      p1: "I'm a graduate of Applied Informatics bachelor's program at STU FEI and currently pursuing an engineering degree specializing in web technologies. I'm exploring various areas of development, from frontend technologies like React to backend with Java, and gradually developing as a fullstack developer, where I can combine both sides to create functional and practical solutions.",
+      p2: "In my free time, I enjoy discovering new technologies, improving my skills, following development trends, and working on projects that push me forward. I also like programming my own ideas and projects, which help me learn new things along the way. Outside of IT, I'm passionate about hardware – I build and optimize PCs, stay up to date with the latest component news, and enjoy helping others with selecting or upgrading their setups. I also like working out, spending time in nature, and editing videos.",
     },
     
     // Projects
@@ -165,37 +170,43 @@ export const translations = {
         },
         {
           id: 4,
-          title: "Voting System",
-          description: "An online voting system for lectures with various question types, QR codes, and a complex administration interface. Team project."
-        },
-        {
-          id: 5,
-          title: "Racing Game",
-          description: "A cross-platform PWA game with gyro controls for mobile and keyboard/mouse for desktop."
-        },        {
-          id: 6,
           title: "Trading212 Tracker",
           description: "Web application for tracking Trading212 investment portfolio using their public API. Provides better analysis tools than the platform's native solution."
         },
         {
+          id: 5,
+          title: "Voting System",
+          description: "An online voting system for lectures with various question types, QR codes, and a complex administration interface. Team project."
+        },
+        {
+          id: 6,
+          title: "Racing Game",
+          description: "A cross-platform PWA game with gyro controls for mobile and keyboard/mouse for desktop."
+        },
+        {
           id: 7,
+          title: "Droply",
+          description: "A simple app for sharing your personal content across devices where each user can only see and manage their own content."
+        },
+        {
+          id: 8,
           title: "Portfolio Website",
           description: "My personal portfolio created with React featuring modern design and animations."
         },        {
-          id: 8,
+          id: 9,
           title: "OOP School Assignments",
           description: "Series of object-oriented programming projects: E-shop API in Spring Boot, WaterPipes game with AWT/Swing, and simplified BANG Lite card game."
         },        {
-          id: 9,
+          id: 10,
           title: "School Assignments WEBTE1",
           description: "Web technologies projects: responsive website design, dynamic charts using Chart.js, interactive maps with OpenStreetMap, and JavaScript DOM manipulations."
         },
         {
-          id: 10,
+          id: 11,
           title: "School Assignments WEBTE2",
           description: "Fullstack web applications: PHP backend with MySQL database, REST API services, dynamic frontend solutions, and CRUD operations with user authentication."
         },{
-          id: 11,
+          id: 12,
           title: "And more...",
           description: "Various school and personal projects using different technologies. Visit my GitHub for a complete overview of all projects."
         }

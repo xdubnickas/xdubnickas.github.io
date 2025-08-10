@@ -55,7 +55,7 @@ function Footer() {
         
         <div className="copyright" data-aos="fade-up" data-aos-delay="300">
           <p>&copy; {currentYear} Štefan Dubnička. {getText(language, 'footer.copyright')}</p>
-          <p>{getText(language, 'footer.createdWith')} <i className="fas fa-heart"></i> {getText(language, 'footer.and')} React</p>
+          <p>{getText(language, 'footer.createdWith')}  <i className="fas fa-heart"></i> {getText(language, 'footer.and')} React</p>
         </div>
       </div>
     </footer>
