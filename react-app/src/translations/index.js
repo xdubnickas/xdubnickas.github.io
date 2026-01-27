@@ -40,42 +40,58 @@ export const translations = {
         },
         {
           id: 4,
-          title: "Trading212 Tracker",
-          description: "Webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje lepšie nástroje na analýzu ako natívne riešenie platformy."
+          title: "Trading212 Portfolio Tracker",
+          description: "Pokročilá webová aplikácia na sledovanie investičného portfólia Trading212 s využitím novšieho API. Primárne zameraná na sledovanie daňovej povinnosti a analýzu výkonnosti portfólia s lepšími nástrojmi ako natívne riešenie platformy."
         },
         {
           id: 5,
+          title: "Trading212 Tracker (starý)",
+          description: "Pôvodná webová aplikácia na sledovanie investičného portfólia Trading212 pomocou ich verejného API. Poskytuje základné nástroje na analýzu."
+        },
+        {
+          id: 6,
+          title: "PinMetrics",
+          description: "Chrome rozšírenie pre Pinterest analytiku, ktoré odhaľuje štatistiky každého pinu - uloženia, komentáre, zdieľania, reakcie a mieru zapojenia. Obsahuje pokročilý analytický panel s filtrovaním a exportom dát."
+        },
+        {
+          id: 7,
           title: "Hlasovací systém",
           description: "Online hlasovací systém pre prednášky s rôznymi typmi otázok, QR kódmi a komplexným administrátorským rozhraním. Tímový projekt."
         },
         {
-          id: 6,
+          id: 8,
           title: "Racing Game",
           description: "Multiplatformová PWA hra s gyro ovládaním pre mobily a klávesnicou/myšou pre desktop."
         },        {
-          id: 7,
+          id: 9,
           title: "Droply",
           description: "Jednoduchá aplikácia na zdieľanie osobného obsahu medzi zariadeniami, kde každý používateľ môže vidieť a spravovať svoj vlastný obsah."
         },
         {
-          id: 8,
+          id: 10,
           title: "Portfolio stránka",
           description: "Moje osobné portfólio vytvorené pomocou React s moderným dizajnom a animáciami."
         },        {
-          id: 9,
+          id: 11,
           title: "Školské zadania OOP",
           description: "Séria projektov z objektovo-orientovaného programovania: E-shop API v Spring Boote, hra WaterPipes s AWT/Swing a zjednodušená kartová hra BANG Lite."
         },        {
-          id: 10,
+          id: 12,
           title: "Školské zadania WEBTE1",
           description: "Projekty z webových technológií: responzívna stránka, grafy pomocou Chart.js, interaktívna mapa s OpenStreetMap a DOM manipulácie v JavaScripte."
         },
         {
-          id: 11,
+          id: 13,
           title: "Školské zadania WEBTE2",
           description: "Fullstack webové aplikácie: PHP backend s MySQL databázou, REST API služby, dynamické frontend riešenia a CRUD operácie s autentifikáciou používateľov."
-        },{
-          id: 12,
+        },
+        {
+          id: 14,
+          title: "Školské zadania SUNS",
+          description: "Tri komplexné projekty zo strojového učenia: predikcia termínovaných vkladov pomocou neurónových sietí, predikcia požičiavania bicyklov s rozhodovacími stromami a SVM, a odhad slnečného žiarenia z fotografií oblohy pomocou CNN a transfer learning."
+        },
+        {
+          id: 15,
           title: "A ďalšie...",
           description: "Rôzne školské a osobné projekty z rôznych technológií. Navštívte môj GitHub pre úplný prehľad všetkých projektov."
         }
@@ -118,8 +134,6 @@ export const translations = {
       contact: "Kontakt",
       quickLinks: "Rýchle odkazy",
       copyright: "Všetky práva vyhradené.",
-      createdWith: "Vytvorené s",
-      and: "a"
     },
     // Language switcher
     languageSwitcher: {
@@ -170,43 +184,59 @@ export const translations = {
         },
         {
           id: 4,
-          title: "Trading212 Tracker",
-          description: "Web application for tracking Trading212 investment portfolio using their public API. Provides better analysis tools than the platform's native solution."
+          title: "Trading212 Portfolio Tracker",
+          description: "Advanced web application for tracking Trading212 investment portfolio using newer API. Primarily focused on monitoring tax obligations and portfolio performance analysis with better tools than the platform's native solution."
         },
         {
           id: 5,
+          title: "Trading212 Tracker (old)",
+          description: "Original web application for tracking Trading212 investment portfolio using their public API. Provides basic analysis tools."
+        },
+        {
+          id: 6,
+          title: "PinMetrics",
+          description: "Chrome extension for Pinterest analytics that reveals statistics for every pin - saves, comments, shares, reactions, and engagement rate. Features an advanced analytics dashboard with filtering and data export."
+        },
+        {
+          id: 7,
           title: "Voting System",
           description: "An online voting system for lectures with various question types, QR codes, and a complex administration interface. Team project."
         },
         {
-          id: 6,
+          id: 8,
           title: "Racing Game",
           description: "A cross-platform PWA game with gyro controls for mobile and keyboard/mouse for desktop."
         },
         {
-          id: 7,
+          id: 9,
           title: "Droply",
           description: "A simple app for sharing your personal content across devices where each user can see and manage their own content."
         },
         {
-          id: 8,
+          id: 10,
           title: "Portfolio Website",
           description: "My personal portfolio created with React featuring modern design and animations."
         },        {
-          id: 9,
+          id: 11,
           title: "OOP School Assignments",
           description: "Series of object-oriented programming projects: E-shop API in Spring Boot, WaterPipes game with AWT/Swing, and simplified BANG Lite card game."
         },        {
-          id: 10,
+          id: 12,
           title: "School Assignments WEBTE1",
           description: "Web technologies projects: responsive website design, dynamic charts using Chart.js, interactive maps with OpenStreetMap, and JavaScript DOM manipulations."
         },
         {
-          id: 11,
+          id: 13,
           title: "School Assignments WEBTE2",
           description: "Fullstack web applications: PHP backend with MySQL database, REST API services, dynamic frontend solutions, and CRUD operations with user authentication."
-        },{
-          id: 12,
+        },
+        {
+          id: 14,
+          title: "SUNS School Assignments",
+          description: "Three comprehensive machine learning projects: bank deposit prediction using neural networks, bike rental prediction with decision trees and SVM, and solar radiation estimation from sky images using CNN and transfer learning."
+        },
+        {
+          id: 15,
           title: "And more...",
           description: "Various school and personal projects using different technologies. Visit my GitHub for a complete overview of all projects."
         }

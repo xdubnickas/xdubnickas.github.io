@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
-const ProjectCard = memo(({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, technologies }) => {
+const ProjectCard = memo(({ title, description, imageUrl, imageAlt, githubUrl, githubIcons, demoUrl, webstoreUrl, technologies }) => {
   return (
     <motion.div 
       className="project-card"
@@ -40,6 +40,11 @@ const ProjectCard = memo(({ title, description, imageUrl, imageAlt, githubUrl, g
             {demoUrl && (
               <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon">
                 <i className="fas fa-external-link-alt"></i>
+              </a>
+            )}
+            {webstoreUrl && (
+              <a href={webstoreUrl} target="_blank" rel="noopener noreferrer" className="project-link-icon" title="Chrome Web Store">
+                <i className="fab fa-chrome"></i>
               </a>
             )}
           </div>

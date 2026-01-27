@@ -16,7 +16,7 @@ function Footer() {
       <div className="container footer-content">
         <div className="footer-sections">
           <div className="footer-section" data-aos="fade-up">
-            <h3>Štefan Dubnička</h3>
+            <h3>Bc. Štefan Dubnička</h3>
             <p>{getText(language, 'header.title')}</p>
             <p>{getText(language, 'footer.description')}</p>
           </div>
@@ -55,7 +55,6 @@ function Footer() {
         
         <div className="copyright" data-aos="fade-up" data-aos-delay="300">
           <p>&copy; {currentYear} Štefan Dubnička. {getText(language, 'footer.copyright')}</p>
-          <p>{getText(language, 'footer.createdWith')}  <i className="fas fa-heart"></i> {getText(language, 'footer.and')} React</p>
         </div>
       </div>
     </footer>
